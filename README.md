@@ -1,2 +1,2 @@
-# Magnetic-Marketing
+# Gomagnet
 Diego Padilla webpage
