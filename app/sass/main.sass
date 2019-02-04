@@ -3,7 +3,115 @@
 
 body, html
   overflow-x: hidden
-  background-color: #000000
+  background-color: $primary-color
+  color: $secondary-color
+  font-family: $primary-font
+  font-size: 16px
+  text-transform: uppercase
+
+.primaryBtn
+  padding: 9px 28px 
+  border-radius: 29px
+  font-size: 20px
+  outline: none
+  border: none
+  cursor: pointer
+  text-transform: uppercase
+  font-weight: 500
+  font-family: $primary-font
+
+.social
+  color: $quaternary-color
+  font-size: 26px
+  &__icon
+    cursor: pointer
+
+.header
+  padding: 29px $section-offset
+  position: relative
+  &__topBar
+    display: flex
+    justify-content: space-between
+  &__logo
+    width: 15.39vw
+  &__clientBtn
+    background-color: $secondary-color
+    color: $quaternary-color
+  &__social
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: $section-offset 
+  &__socialIcon
+    margin-top: 40px
+  &__contentWrap
+    display: flex
+    width: 77.421875vw
+    justify-content: space-between
+    align-items: center
+  &__name
+    font-size: 11.71875vw
+    width: min-content
+    margin: 0
+  &__about
+    font-size: 3.125vw
+    text-align: center
+  &__nameCaption
+    font-size: 2.03125vw
+    display: flex
+    justify-content: flex-end
+  &__chatBtn
+    outline: none
+    border: none  
+    background-color: $tertiary-color
+    border-radius: 50%
+    width: 75px
+    height: 75px
+    font-family: $primary-font
+    font-weight: 200
+    font-size: 30px
+    padding-bottom: 5px
+    position: absolute
+    right: $section-offset
+
+.advice
+  padding: 12.18vw $section-offset
+  &__contentWrap
+    width: fit-content
+    margin-left: auto
+    margin-right: 20.625vw
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+  &__pros
+    display: flex
+    flex-direction: column
+    justify-content: flex-start
+    margin-bottom: 0
+  &__more
+    text-transform: lowercase
+    font-weight: 300
+    font-size: 4.68vw
+  &__moreWrap:nth-of-type(1) &__more
+    color: #9B9B9B
+  &__moreWrap:nth-of-type(2) &__more
+    color: #6B6A6A
+  &__moreWrap:nth-of-type(3) &__more
+    color: #4B4B4B
+  &__feature
+    font-size: 4.68vw
+  &__description
+    width: 71%
+    margin-left: auto
+  &__action
+    color: $tertiary-color
+    font-size: 1.56vw
+    font-weight: 300
+    margin: 43px 0
+  &__btn
+    background-color: $tertiary-color
 
 
 @import './media'
