@@ -1,5 +1,6 @@
 @import './libs'
 @import './vars'
+@import './fonts'
 
 body, html
   overflow-x: hidden
@@ -20,6 +21,9 @@ body, html
   font-weight: 500
   font-family: $primary-font
 
+.highlight
+  color: $tertiary-color
+
 .social
   color: $quaternary-color
   font-size: 26px
@@ -29,11 +33,15 @@ body, html
 .header
   padding: 29px $section-offset
   position: relative
-  background-image: url("../img/smoke.png")
   min-height: 48vw
-  background-position: center -21vw
-  background-size: 100% auto
-  background-repeat: no-repeat
+  &__bg
+    position: absolute
+    top: -21vw
+    left: 50%
+    transform: translateX(-50%)
+    width: 100%
+    height: auto
+    z-index: 0
   &__topBar
     display: flex
     justify-content: space-between
@@ -81,12 +89,34 @@ body, html
     position: absolute
     right: $section-offset
 
+.sectionIndicator
+  position: absolute
+  left: -$section-offset
+  display: flex
+  align-items: center
+  transform: rotate(-90deg)
+  font-size: 2.34vw
+  top: 40%
+  color: $tertiary-color
+  font-weight: 200 
+  &__name
+    margin: 0
+    font-weight: 300
+  &__line
+    width: 7.26vw
+    height: 1px
+    background-color: #8A8A8A
+    margin: 0 18px 
+  &__sectionCount
+    transform: rotate(90deg)
+
 .advice
+  position: relative
   padding: 12.18vw $section-offset
   &__contentWrap
     width: fit-content
     margin-left: auto
-    margin-right: 20.625vw
+    margin-right: 18.625vw
     display: flex
     flex-direction: column
     justify-content: flex-start
@@ -117,6 +147,75 @@ body, html
     margin: 43px 0
   &__btn
     background-color: $tertiary-color
+
+.youGet
+  &__about
+    color: #A5A5A5
+    width: 48.82vw
+    font-size: 2.34vw
+    margin-left: 12.89vw
+
+.weDo
+  margin-top: 30.46vw
+  &__titleWrap
+    background-image: url("../img/iron.png")
+    background-size: 100% auto
+    background-repeat: no-repeat
+    background-position: bottom
+    display: flex
+    background-repeat: no-repeat
+    justify-content: flex-end
+    padding-right: 9.84vw 
+    padding-bottom: 2.73vw
+  &__bg
+    width: 100%
+    height: auto
+    position: absolute
+  &__title
+    font-size: 15.62vw
+    width: 37vw
+    margin: 0
+  &__about
+    background-image: url("../img/blackWhite.png")
+    background-size: 100% auto
+    background-repeat: no-repeat
+    background-position: top
+    display: flex
+    justify-content: center
+    padding-top: 17.1vw 
+    min-height: 55vw
+  &__description
+  &__line
+    display: inline-flex
+    background-color: $tertiary-color
+    font-size: 3.90vw
+    margin-bottom: 1.32vw
+    color: #ffdee7
+    font-weight: bold
+    padding: 6px
+
+.process
+  padding-top: 5.93vw 
+  &__header
+    font-size: 11.71vw
+    margin: 0
+    color: $tertiary-color  
+    padding-left: 12.26vw
+  &__description
+    font-size: 2.34vw
+    color: $primary-color
+    font-weight: 600
+  &__line
+    display: block
+    background-color: $secondary-color
+    padding: 1.40vw
+    margin-top: 0.78vw
+    padding-left: 12.26vw
+    padding-right: 16.95vw
+
+.agreement
+  &__box
+
 
 
 @import './media'
