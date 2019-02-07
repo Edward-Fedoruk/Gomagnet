@@ -21,6 +21,30 @@ body, html
   font-weight: 500
   font-family: $primary-font
 
+.arrow
+  box-sizing: content-box
+  padding: 5px
+  height: 4vw
+  width: 1px
+  position: absolute
+  cursor: pointer
+  &__block
+    background-color: $secondary-color
+    width: 100%
+    height: 100%
+    position: relative
+    &::before
+      content: ""
+      border: 1px solid $secondary-color
+      padding: 3px
+      transform: rotate(45deg) 
+      display: inline-block
+      border-top: transparent
+      border-left: transparent
+      position: absolute
+      bottom: 0
+      left: -3px
+
 .highlight
   color: $tertiary-color
 
@@ -214,7 +238,14 @@ body, html
     padding-right: 16.95vw
 
 .agreement
-  &__box
+  position: relative
+  padding-top: 28.28vw
+  &__arrow
+    top: 4.8vw
+    left: 32.5vw
+    height: 18.04vw
+  
+
 
 
 
