@@ -14,6 +14,7 @@ gulp.task('js', function() {
 			'app/libs/jquery/*.js',
 			'app/libs/aos/aos.js',
 			'app/libs/slick/*.js',
+			'app/libs/marquee/*.js',
 			'app/js/main.js',
 			'app/js/lettersAnimation.js',
 		]) 
