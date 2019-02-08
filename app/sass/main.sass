@@ -244,9 +244,82 @@ body, html
     top: 4.8vw
     left: 32.5vw
     height: 18.04vw
-  
+
+.optin
+  padding: 50px
+  max-width: 1170px
+  margin: 0 auto
+  position: relative
+  overflow: hidden
+  &__intro
+    width: 50%
+    float: left
+    &__text-white
+      color: #fff
+      display: block
+      line-height: 1.2em
+      font-size: 10em
+      font-weight: bold
+    &__text-pink
+      color: #fc2062
+      display: block
+      line-height: 1.2em
+      font-size: 10em
+      font-weight: bold
+    &__text-mail
+      font-size: 3em
+      line-height: 1.7em
+      color: #fff
+      display: block
+    &__text-phone
+      display: block
+      font-weight: 200
+      font-size: 2em
+      line-height: 1.7em
+      color: #fff 
+  &__form
+    width: 50%
+    float: left
+    position: relative
+    &__text
+      margin-top: 40px
+      margin-bottom: 30px
+      font-size: 30px
+      font-weight: 500
+      color: #fc2062
+      text-transform: capitalize
+    &__input
+      padding: 15px 20px
+      width: 100%
+      background-color: #000
+      color: #fff
+      border: none
+      font-size: 3em
+      font-weight: 300
+      &:placeholder
+        color: #4b4b4b
+      &:hover, &:focus, &:active
+        outline: none
+        border: none
+  &__social
+    display: flex
+    flex-direction: column
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    right: $section-offset 
+    clear: both
+  &__socialIcon
+    margin-top: 40px
+  &___footer
+    margin: 0px
+    padding: 0px
+    &__logo
+      text-align: center
+      clear: both
 
 
+    
 
 
 @import './media'
