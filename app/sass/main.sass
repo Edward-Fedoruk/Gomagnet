@@ -246,40 +246,82 @@ body, html
     height: 18.04vw
 
 .optin
+  *
+    box-sizing: border-box
+
   padding: 50px
-  max-width: 1170px
+  max-width: 1200px
   margin: 0 auto
   position: relative
   overflow: hidden
+
+  &__fieldset
+    border: 0px
+  &__flex__wrapper
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+
+  &__getin__touch
+    flex: 0 0 5%
+    max-width: 5%
+    padding: 0 15px
+    position: relative
+    padding-top: 230px
+
+  &__getin__heading1
+    transform: rotate(-90deg)
+    color: #fc2062
+    position: absolute
+    left: -95px
+    height: 4%
+    width: 250px
+    top: 7%
+    font-weight: normal
+    font-size: 26px
+  &__getin__heading2
+    color: #fc2062
+    font-weight: normal
+    font-size: 26px
+  &__vertical__line
+    height: 200px
+    width: 2px
+    display: block
+    margin: 0px auto
+    background-color: #ccc
+    opacity: 0.5
   &__intro
-    width: 50%
-    float: left
+    max-width: 35%
+    flex: 0 0 35%
+    padding: 0px 15px
+    // float: left
     &__text-white
       color: #fff
       display: block
       line-height: 1.2em
-      font-size: 10em
+      font-size: 8em
       font-weight: bold
     &__text-pink
       color: #fc2062
       display: block
       line-height: 1.2em
-      font-size: 10em
+      font-size: 8em
       font-weight: bold
     &__text-mail
-      font-size: 3em
+      font-size: 2.4em
       line-height: 1.7em
       color: #fff
       display: block
     &__text-phone
       display: block
       font-weight: 200
-      font-size: 2em
+      font-size: 1.8em
       line-height: 1.7em
       color: #fff 
   &__form
-    width: 50%
-    float: left
+    max-width: 40%
+    flex: 0 0 40%
+    padding: 0px 15px
     position: relative
     &__text
       margin-top: 40px
@@ -289,34 +331,102 @@ body, html
       color: #fc2062
       text-transform: capitalize
     &__input
-      padding: 15px 20px
+      padding: 15px 20px 15px 0px
       width: 100%
       background-color: #000
       color: #fff
       border: none
-      font-size: 3em
+      font-size: 2.2em
       font-weight: 300
+      font-family: $primary-font
       &:placeholder
         color: #4b4b4b
       &:hover, &:focus, &:active
         outline: none
         border: none
+    &__submit
+      padding-top: 30px
+      // display: none
+    &__next
+      color: #fff
+      text-decoration: none
+      text-transform: lowercase
+      font-size: 26px
+      position: relative
+      display: block
+      .arrow
+        box-sizing: content-box
+        height: 1px
+        padding: 0px
+        width: 60px
+        position: absolute
+        cursor: pointer
+        left: 50px
+        top: 16px
+        background-color: $secondary-color
+        &__block
+          background-color: $secondary-color
+          width: 100%
+          height: 100%
+          position: relative
+          display: block
+          &::before
+            content: ""
+            border: 1px solid $secondary-color
+            padding: 3px
+            transform: rotate(-45deg)
+            display: inline-block
+            border-top: transparent
+            border-left: transparent
+            position: absolute
+            bottom: -3px
+            right: 0
+            left: calc(100% - 6px)
+    &__submitbtn
+      background-color: #fc2062
+      padding: 12px 30px
+      font-size: 20px
+      color: #000
+      appearance: none
+      border-radius: 50px
+      outline: none
+      font-weight: 600
+      text-transform: uppercase
+      border: 0px
+      font-family: $primary-font
+      cursor: pointer
+
   &__social
+    transform: translateY(20%)
+    max-width: 5%
+    flex: 0 0 5%
+    padding: 0px 15px
     display: flex
     flex-direction: column
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    right: $section-offset 
-    clear: both
+    // position: absolute
+    // top: 50%
   &__socialIcon
     margin-top: 40px
-  &___footer
+  &__footer
     margin: 0px
-    padding: 0px
+    padding: 75px 0px 0px
+    width: 100%
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: flex-end
     &__logo
       text-align: center
       clear: both
+      margin-right: 50px
+  
+    &__heading
+      font-size: 20px
+      font-weight: normal
+      letter-spacing: 0.5px
+    &__anchor
+      color: #fff
+      text-decoration: none
 
 
     
