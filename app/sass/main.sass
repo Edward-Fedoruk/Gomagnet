@@ -362,5 +362,42 @@ body, html
     opacity: 0  
     transition: opacity,transform .5s cubic-bezier(0.68, -0.55, 0.27, 1.55),-webkit-transform .5s linear
 
+.footer
+  padding: 4.92vw $section-offset 3.67vw 12.89vw
+  background-color: $primary-color
+  &__header
+    font-size: 9.37vw
+    margin: 0
+  &__email
+    font-size: 3.12vw
+    color: $secondary-color
+    line-height: 2.3
+    transition: color .3s linear
+    &:hover
+      color: $tertiary-color
+  &__phone
+    font-size: 1.56vw
+    color: $secondary-color
+    text-decoration: none
+    font-weight: 300
+    transition: color .3s linear
+    &:hover
+      color: $tertiary-color
+  &__phone:visited, &__email:visited
+    color: $secondary-color
+  &__address
+    font-style: normal
+  &__privacy
+    display: flex
+    justify-content: flex-end
+    width: 50vw
+    margin-left: auto
+    align-items: baseline
+    margin-top: 7.65vw
+  &__copyright
+    font-weight: 300
+    font-size: 14px
+    display: block
+    margin-left: auto
 
 @import './media'
