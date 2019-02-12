@@ -11,9 +11,9 @@ body, html
   text-transform: uppercase
 
 .primaryBtn
-  padding: 9px 28px 
-  border-radius: 29px
-  font-size: 20px
+  padding: 0.7vw 2.18vw 
+  border-radius: 2.26vw
+  font-size: 1.56vw
   outline: none
   border: none
   cursor: pointer
@@ -53,7 +53,7 @@ body, html
 
 .social
   color: $quaternary-color
-  font-size: 26px
+  font-size: 2.03vw
   &__icon
     cursor: pointer
 
@@ -72,6 +72,7 @@ body, html
   &__topBar
     display: flex
     justify-content: space-between
+    align-items: center
   &__logo
     width: 15.39vw
   &__clientBtn
@@ -85,7 +86,7 @@ body, html
     transform: translateY(-50%)
     right: $section-offset 
   &__socialIcon
-    margin-top: 40px
+    margin-top: 3.12vw
   &__contentWrap
     display: flex
     width: 77.421875vw
@@ -107,12 +108,12 @@ body, html
     border: none  
     background-color: $tertiary-color
     border-radius: 50%
-    width: 75px
-    height: 75px
+    width: 5.85vw
+    height: 5.85vw
     font-family: $primary-font
     font-weight: 200
-    font-size: 30px
-    padding-bottom: 5px
+    font-size: 2.34vw
+    padding-bottom: 0.39vw
     position: absolute
     right: $section-offset
 
@@ -184,6 +185,8 @@ body, html
 
 .weDo
   margin-top: 30.46vw
+  &__highlight
+    display: inline
   &__titleWrap
     background-image: url("../img/iron.png")
     background-size: 100% auto
@@ -399,5 +402,6 @@ body, html
     font-size: 14px
     display: block
     margin-left: auto
+
 
 @import './media'

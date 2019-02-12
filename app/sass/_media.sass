@@ -1,12 +1,133 @@
 @import 'vars'
+/*==========  Desktop First  ==========*/
 
-@media only screen and (min-width : 992px)
-  /**/ 
+/* Extra Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/* Large Devices, Desktops */
 @media only screen and (max-width : 992px)
-  /**/ 
+	/* Medium Devices, Tablets */
 @media only screen and (max-width : 768px)
-  /**/ 
-@media only screen and (min-width : 576px)
-  /**/ 
+  .sectionIndicator
+    display: none
+  
+  .primaryBtn
+    padding: 2.5vw 4.37vw
+    font-size: 4.37vw
+    border-radius: 9.06vw
+
+  .arrow
+    height: 41.25vw
+
+  .header
+    &__clientBtn
+      padding: 2.5vw 4.37vw
+      font-size: 4.37vw
+      border-radius: 9.06vw
+    &__logo
+      width: 19.37vw 
+    &__name
+      font-size: 18.75vw
+    &__contentWrap
+      flex-direction: column
+      align-items: flex-start
+    &__about
+      font-size: 6.25vw
+      text-align: left
+      margin-top: 19.06vw
+      margin-bottom: 0
+    &__socialIcon
+      font-size: 8.12vw
+  
+  .advice
+    padding-top: 3vw
+    &__feature
+      font-size: 10.31vw
+    &__more
+      font-size: 10.31vw
+    &__contentWrap
+      margin-left: 0
+    &__description
+      margin-left: 0
+      width: 100%
+    &__action
+      font-size: 3.75vw
+    
+  .youGet
+    &__about
+      width: 81.87vw
+      margin-left: $section-offset
+      font-size: 6.25vw
+
+  .weDo
+    margin-top: 22.46vw
+    &__titleWrap
+      justify-content: flex-start
+      padding-left: $section-offset
+    &__line
+      font-size: 5.3vw
+  
+  .process
+    &__header
+      padding-left: $section-offset
+      font-size: 21.87vw
+    &__line
+      padding-left: $section-offset
+      font-size: 6.25vw
+      padding-right: 0
+  
+  .agreement
+    padding-top: 54vw
+    &__box
+      margin-right: 0
+      margin-left: 0
+      width: 100%
+    &__header
+      padding-left: $section-offset 
+    &__list
+      padding-left: 8.37vw
+    &__listItem
+      font-size: 4.37vw
+    &__arrow-box
+      bottom: -83%
+      left: 19.71vw
+  
+  .marquee
+    padding-top: 40vw
+    padding-bottom: 36vw
+    &__header
+      font-size: 28.12vw
+      width: 100%
+    &__bestWrap
+      margin-left: $section-offset
+      width: 100%
+      flex-wrap: wrap
+    &__text
+      font-size: 6.25vw  
+    &__btn
+      margin: 4vw 0
+    &__directionWrap
+      align-items: flex-start
+      padding-left: 6.25vw
+      padding-right: 11.87vw
+      flex-direction: column
+    &__from
+      font-size: 6.25vw
+      text-align: right
+      align-self: flex-end
+    &__to
+      margin-top: 49.37vw
+      font-size: 12.5vw
+    &__arrowIcon
+      transform: rotate(110deg)
+      bottom: 54vw
+      font-size: 24vw
+    &__arrow
+      left: 50vw
+      bottom: -48vw  
+
+
+ 
+@media only screen and (max-width : 576px)
+	/* Custom Device */
 @media only screen and (max-width : 320px)
 	/**/
