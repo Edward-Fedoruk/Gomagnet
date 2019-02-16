@@ -17,6 +17,7 @@ gulp.task('js', function() {
 			'app/libs/marquee/*.js',
 			'app/js/main.js',
 			'app/js/lettersAnimation.js',
+			'app/js/wordAnimation.js',
 		]) 
 		.pipe(uglify())
 		.pipe(concat('common.min.js'))
