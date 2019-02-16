@@ -23,6 +23,8 @@ body, html
   &-pink
     background-color: $tertiary-color
 
+.spanWrapper
+  opacity: 0
 
 .arrow
   box-sizing: content-box
@@ -56,6 +58,12 @@ body, html
   font-size: 2.03vw
   &__icon
     cursor: pointer
+    transition: transform .5s
+    &:hover
+      transform: rotate(360deg) !important
+      i::before
+        transition: color .5s !important
+        color: $secondary-color
 
 .header
   padding: 29px $section-offset
@@ -94,16 +102,21 @@ body, html
     align-items: center
   &__name
     font-size: 11.71875vw
-    width: min-content
     margin: 0
+    display: block
   &__about
     font-size: 3.125vw
     text-align: center
+    display: block
+    width: 23vw
+    span 
+      display: inline-block
   &__nameCaption
     font-size: 2.03125vw
     display: flex
     justify-content: flex-end
   &__chatBtn
+    bottom: 0
     outline: none
     border: none  
     background-color: $tertiary-color
