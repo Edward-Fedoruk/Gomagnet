@@ -17,6 +17,10 @@ gulp.task('js', function() {
 			'app/libs/marquee/*.js',
 			'app/js/main.js',
 			'app/js/lettersAnimation.js',
+			'app/js/LatticeAnimation.js',
+			'app/js/leftNavigation.js',
+			'app/js/weDoParallax.js',
+			'app/js/arrowScroll.js',
 			'app/js/wordAnimation.js',
 		]) 
 		.pipe(uglify())
