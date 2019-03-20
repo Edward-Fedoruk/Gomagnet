@@ -1,4 +1,4 @@
-$(window).on('load', function() {
+// $(document).ready(function() {
 	$('#intro_name').on('keyup', function() {
 		if ($(this).val() != '') {
 			$('#next_btn1').fadeIn();
@@ -22,12 +22,42 @@ $(window).on('load', function() {
 		}
 	});
 
+	$('.popup__form__group input').on('keyup', function() {
+		if ($(this).val() != '') {
+			var nextChild = $(this).parent('.popup__form__group').siblings('.popup__form__submit');
+			$(nextChild).find('.popup__form__next').fadeIn();
+		} else {		
+			$('.popup__form__next').fadeOut();
+		}
+	});
+
+	$('.popup__form__next').on('click', function() {
+		$(this).parents('.popup__input__wrapper').next().fadeIn();
+		$(this).hide();
+	});
+
+	$('#popup__select__price').on('change', function() {
+		$('#popup__form__submit').fadeIn();
+	});
+
 	$('[data-modal-open]').on('click', function() {
 		var modalToOpen = $(this).attr('data-modal-open');
 		$('[data-modal="'+ modalToOpen +'"]').addClass('popup__active');
 	});
-	
-});
+
+	$('[data-modal-close]').on('click', function() {
+		var modalToClose = $(this).attr('data-modal-close');
+		$('[data-modal="'+ modalToClose +'"]').removeClass('popup__active');
+	});
+
+	var modal = $('.popup');
+	$(document).on('click', function(event) {
+		if (event.target == modal) {
+			$(modal).removeClass('popup__active');
+		}
+	});
+
+// });
 
 // function checkIfMail(email) {
 // 	var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;

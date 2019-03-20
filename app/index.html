@@ -195,62 +195,75 @@
 
     <div class="popup" data-modal="modal-1">
       <div class="popup__wrapper">
+        <div class="popup__close__wrapper">
+          <a href="javascript:;" class="popup__close__btn" data-modal-close="modal-1">
+            <img src="img/cancel.png" class="img-fluid popup__close__img" alt="" />
+          </a>
+        </div>
         <div class="popup__inner__box">
           <div class="popup__header">
             <h1 class="popup__heading">become a client</h1>
           </div>
           <div class="popup__body__content">
             <form method="" class="popup__form__main">
-              <h4 class="popup__body__heading">First of all, what do you need?</h4>
-              <div class="popup__form__group">
-                <input type="text" placeholder="Describe your project briefly" autofocus="" name="">
+              <div class="popup__input__wrapper">
+                <h4 class="popup__body__heading">First of all, what do you need?</h4>
+                <div class="popup__form__group">
+                  <input type="text" placeholder="Describe your project briefly" autofocus="" name="">
+                </div>
+                <div class="popup__form__submit" id="">
+                  <a href="javascript:;" class="popup__form__next">next 
+                    <span class="arrow">
+                      <span class="arrow__block"></span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <div class="popup__form__submit" id="">
-                <a href="javascript:;" class="popup__form__next">next 
-                  <span class="arrow">
-                    <span class="arrow__block"></span>
-                  </span>
-                </a>
+              <div class="popup__input__wrapper">
+                <h4 class="popup__body__heading">Oh shoot! We didn't get your name.</h4>
+                <div class="popup__form__group">
+                  <input type="text" placeholder="Please introduce yourself" autofocus="" name="">
+                </div>
+                <div class="popup__form__submit" id="">
+                  <a href="javascript:;" class="popup__form__next">next 
+                    <span class="arrow">
+                      <span class="arrow__block"></span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <h4 class="popup__body__heading">Oh shoot! We didn't get your name.</h4>
-              <div class="popup__form__group">
-                <input type="text" placeholder="Please introduce yourself" autofocus="" name="">
+              <div class="popup__input__wrapper">
+                <h4 class="popup__body__heading">It's nice to meet you. Now, how should we reach you?</h4>
+                <div class="popup__form__group">
+                  <input type="text" placeholder="Enter your email address" autofocus="" name="">
+                </div>
+                <div class="popup__form__submit" id="">
+                  <a href="javascript:;" class="popup__form__next">next 
+                    <span class="arrow">
+                      <span class="arrow__block"></span>
+                    </span>
+                  </a>
+                </div>
               </div>
-              <div class="popup__form__submit" id="">
-                <a href="javascript:;" class="popup__form__next">next 
-                  <span class="arrow">
-                    <span class="arrow__block"></span>
-                  </span>
-                </a>
-              </div>
-              <h4 class="popup__body__heading">It's nice to meet you. Now, how should we reach you?</h4>
-              <div class="popup__form__group">
-                <input type="text" placeholder="Enter your email address" autofocus="" name="">
-              </div>
-              <div class="popup__form__submit" id="">
-                <a href="javascript:;" class="popup__form__next">next 
-                  <span class="arrow">
-                    <span class="arrow__block"></span>
-                  </span>
-                </a>
-              </div>
-              <h4 class="popup__body__heading">And the last. How much do you plan to invest in the development of your business? Choose your monthly marketing budget.</h4>
-              <div class="popup__form__group">
-                <select name="">
-                  <option value="">Choose budget</option>
-                  <option value="$10,00-$2,500">$1000-$2500</option>
-                  <option value="$2,501-$5,000">$2501-$5000</option>
-                  <option value="$5,001-$10,000">$5001-$10000</option>
-                  <option value="$10,001-$25,0000">$10,001-$25,0000</option>
-                  <option value="$25k-$100k">$25k-$100k</option>
-                </select>
-              </div>
-              <div class="popup__form__submit" id="">
-                <button type="submit" id="" class="popup__form__submitBtn">Submit
-                  <span class="arrow">
-                    <span class="arrow__block"></span>
-                  </span>
-                </button>
+              <div class="popup__input__wrapper">
+                <h4 class="popup__body__heading">And the last. How much do you plan to invest in the development of your business? Choose your monthly marketing budget.</h4>
+                <div class="popup__form__group">
+                  <select name="" id="popup__select__price">
+                    <option value="">Choose budget</option>
+                    <option value="$10,00-$2,500">$1000-$2500</option>
+                    <option value="$2,501-$5,000">$2501-$5000</option>
+                    <option value="$5,001-$10,000">$5001-$10000</option>
+                    <option value="$10,001-$25,0000">$10,001-$25,0000</option>
+                    <option value="$25k-$100k">$25k-$100k</option>
+                  </select>
+                </div>
+                <div class="popup__form__submit" id="popup__form__submit">
+                  <button type="submit" id="" class="popup__form__submitBtn">Submit
+                    <span class="arrow">
+                      <span class="arrow__block"></span>
+                    </span>
+                  </button>
+                </div>
               </div>
             </form>
           </div>

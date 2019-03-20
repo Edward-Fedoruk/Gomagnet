@@ -456,12 +456,13 @@ body, html
   &__wrapper
     background-color: #fff
     padding: 10px 60px
-    width: 50%
+    width: 70%
     margin: 0px auto
     display: flex
     flex-wrap: wrap
     justify-content: center
     min-height: 625px
+    position: relative
 
   &__inner__box
     flex: 0 0 80%
@@ -479,8 +480,9 @@ body, html
   &__body__heading
     color: $tertiary-color
     text-transform: none
-    font-size: 22px
+    font-size: 18px
     margin: 30px 0px 10px
+    font-weight: normal
 
   &__form__group
     margin: 0px 0px 25px
@@ -491,7 +493,7 @@ body, html
       background-color: transparent
       color: #000
       border: none
-      font-size: 2em
+      font-size: 1.8em
       font-weight: 400
       font-family: $primary-font
       &:placeholder
@@ -501,7 +503,7 @@ body, html
         border: none
 
     select
-      padding: 12px 20px 12px
+      padding: 12px 70px 12px 20px
       width: auto
       background-color: transparent
       color: #000
@@ -570,6 +572,7 @@ body, html
     font-size: 26px
     position: relative
     display: block
+    display: none
     .arrow
       box-sizing: content-box
       height: 1px
@@ -598,13 +601,28 @@ body, html
           bottom: -3px
           right: 0
           left: calc(100% - 6px)
-
+  &__input__wrapper
+    &:not(:first-child)
+      display: none
+  // &__form__submit
+  //   display: none
   &__footer__content
     justify-self: flex-end
     padding-top: 20px
     margin-top: auto
     text-align: center
     padding-bottom: 10px
+  #popup__form__submit
+    display: none
+  &__close__wrapper
+    position: absolute
+    top: 15px
+    right: 15px
+    height: 25px
+    width: 25px
 
+  &__close__img
+    height: 100%
+    width: 100%
 
 @import './media'
