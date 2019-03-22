@@ -1,4 +1,4 @@
-// $(document).ready(function() {
+$(document).ready(function() {
 	$('#intro_name').on('keyup', function() {
 		if ($(this).val() != '') {
 			$('#next_btn1').fadeIn();
@@ -50,14 +50,13 @@
 		$('[data-modal="'+ modalToClose +'"]').removeClass('popup__active');
 	});
 
-	var modal = $('.popup');
-	$(document).on('click', function(event) {
-		if (event.target == modal) {
-			$(modal).removeClass('popup__active');
+	$(document).on('click', function(e) {
+		if (!$('.popup__wrapper, [data-modal-open]').is(e.target) && $('.popup__wrapper, [data-modal-open]').has(e.target).length == 0) {
+			$('.popup').removeClass('popup__active');
 		}
 	});
 
-// });
+});
 
 // function checkIfMail(email) {
 // 	var regex = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
